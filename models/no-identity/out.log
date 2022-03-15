@@ -1,0 +1,683 @@
+2022-03-15 16:54:58,430 - INFO - allennlp.common.params - random_seed = 13370
+2022-03-15 16:54:58,430 - INFO - allennlp.common.params - numpy_seed = 1337
+2022-03-15 16:54:58,431 - INFO - allennlp.common.params - pytorch_seed = 133
+2022-03-15 16:54:58,434 - INFO - allennlp.common.checks - Pytorch version: 1.9.1+cpu
+2022-03-15 16:54:58,434 - INFO - allennlp.common.params - type = default
+2022-03-15 16:54:58,435 - INFO - allennlp.common.params - dataset_reader.type = simple_language_modeling
+2022-03-15 16:54:58,436 - INFO - allennlp.common.params - dataset_reader.type = simple_language_modeling
+2022-03-15 16:54:58,436 - INFO - allennlp.common.params - dataset_reader.max_instances = None
+2022-03-15 16:54:58,436 - INFO - allennlp.common.params - dataset_reader.manual_distributed_sharding = False
+2022-03-15 16:54:58,437 - INFO - allennlp.common.params - dataset_reader.manual_multiprocess_sharding = False
+2022-03-15 16:54:58,437 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = just_spaces
+2022-03-15 16:54:58,438 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = just_spaces
+2022-03-15 16:54:58,439 - INFO - allennlp.common.params - dataset_reader.token_indexers.type = ref
+2022-03-15 16:54:58,441 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.type = single_id
+2022-03-15 16:54:58,442 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.type = single_id
+2022-03-15 16:54:58,443 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.namespace = tokens
+2022-03-15 16:54:58,444 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.lowercase_tokens = False
+2022-03-15 16:54:58,445 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.start_tokens = None
+2022-03-15 16:54:58,445 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.end_tokens = None
+2022-03-15 16:54:58,445 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.feature_name = text
+2022-03-15 16:54:58,445 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.default_value = THIS IS A REALLY UNLIKELY VALUE THAT HAS TO BE A STRING
+2022-03-15 16:54:58,446 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.token_min_padding_length = 0
+2022-03-15 16:54:58,446 - INFO - allennlp.common.params - dataset_reader.max_sequence_length = 200
+2022-03-15 16:54:58,447 - INFO - allennlp.common.params - dataset_reader.start_tokens = ['<S>']
+2022-03-15 16:54:58,447 - INFO - allennlp.common.params - type = <S>
+2022-03-15 16:54:58,447 - INFO - allennlp.common.params - dataset_reader.end_tokens = ['</S>']
+2022-03-15 16:54:58,448 - INFO - allennlp.common.params - type = </S>
+2022-03-15 16:54:58,448 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - Creating SimpleLanguageModelingDatasetReader
+2022-03-15 16:54:58,448 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - max_sequence_length=200
+2022-03-15 16:54:58,449 - INFO - allennlp.common.params - train_data_path = data/ptbdataset/ptb.train.txt
+2022-03-15 16:54:58,450 - INFO - allennlp.common.params - type = data/ptbdataset/ptb.train.txt
+2022-03-15 16:54:58,460 - INFO - allennlp.common.params - model.type = language_model
+2022-03-15 16:54:58,462 - INFO - allennlp.common.params - data_loader.type = ref
+2022-03-15 16:54:58,466 - INFO - allennlp.common.params - trainer.type = ref
+2022-03-15 16:54:58,468 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x0000024C0675C1C8>
+2022-03-15 16:54:58,469 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2022-03-15 16:54:58,470 - INFO - allennlp.common.params - validation_dataset_reader = None
+2022-03-15 16:54:58,471 - INFO - allennlp.common.params - validation_data_path = data/ptbdataset/ptb.valid.txt
+2022-03-15 16:54:58,472 - INFO - allennlp.common.params - type = data/ptbdataset/ptb.valid.txt
+2022-03-15 16:54:58,474 - INFO - allennlp.common.params - validation_data_loader = None
+2022-03-15 16:54:58,475 - INFO - allennlp.common.params - test_data_path = None
+2022-03-15 16:54:58,476 - INFO - allennlp.common.params - evaluate_on_test = False
+2022-03-15 16:54:58,477 - INFO - allennlp.common.params - batch_weight_key = 
+2022-03-15 16:54:58,478 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2022-03-15 16:54:58,480 - INFO - allennlp.common.params - data_loader.batch_size = None
+2022-03-15 16:54:58,481 - INFO - allennlp.common.params - data_loader.drop_last = False
+2022-03-15 16:54:58,481 - INFO - allennlp.common.params - data_loader.shuffle = False
+2022-03-15 16:54:58,482 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2022-03-15 16:54:58,482 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2022-03-15 16:54:58,483 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 16
+2022-03-15 16:54:58,484 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = None
+2022-03-15 16:54:58,484 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2022-03-15 16:54:58,485 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = False
+2022-03-15 16:54:58,485 - INFO - allennlp.common.params - data_loader.batch_sampler.shuffle = True
+2022-03-15 16:54:58,486 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2022-03-15 16:54:58,486 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2022-03-15 16:54:58,487 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = 1600
+2022-03-15 16:54:58,488 - INFO - allennlp.common.params - data_loader.start_method = fork
+2022-03-15 16:54:58,489 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2022-03-15 16:54:58,491 - INFO - allennlp.common.params - data_loader.quiet = False
+2022-03-15 16:54:58,493 - INFO - allennlp.common.params - data_loader.collate_fn = <allennlp.data.data_loaders.data_collator.DefaultDataCollator object at 0x0000024C0293A748>
+2022-03-15 16:54:58,499 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2022-03-15 16:54:58,503 - INFO - allennlp.common.params - data_loader.batch_size = None
+2022-03-15 16:54:58,504 - INFO - allennlp.common.params - data_loader.drop_last = False
+2022-03-15 16:54:58,505 - INFO - allennlp.common.params - data_loader.shuffle = False
+2022-03-15 16:54:58,506 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2022-03-15 16:54:58,508 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2022-03-15 16:54:58,509 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 16
+2022-03-15 16:54:58,510 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = None
+2022-03-15 16:54:58,510 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2022-03-15 16:54:58,510 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = False
+2022-03-15 16:54:58,511 - INFO - allennlp.common.params - data_loader.batch_sampler.shuffle = True
+2022-03-15 16:54:58,511 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2022-03-15 16:54:58,512 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2022-03-15 16:54:58,513 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = 1600
+2022-03-15 16:54:58,514 - INFO - allennlp.common.params - data_loader.start_method = fork
+2022-03-15 16:54:58,517 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2022-03-15 16:54:58,520 - INFO - allennlp.common.params - data_loader.quiet = False
+2022-03-15 16:54:58,520 - INFO - allennlp.common.params - data_loader.collate_fn = <allennlp.data.data_loaders.data_collator.DefaultDataCollator object at 0x0000024C0293A748>
+2022-03-15 16:54:58,521 - INFO - allennlp.common.params - type = from_instances
+2022-03-15 16:54:58,522 - INFO - allennlp.common.params - min_count = None
+2022-03-15 16:54:58,522 - INFO - allennlp.common.params - max_vocab_size = None
+2022-03-15 16:54:58,522 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2022-03-15 16:54:58,523 - INFO - allennlp.common.params - pretrained_files = None
+2022-03-15 16:54:58,523 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2022-03-15 16:54:58,523 - INFO - allennlp.common.params - tokens_to_add = None
+2022-03-15 16:54:58,524 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2022-03-15 16:54:58,528 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2022-03-15 16:54:58,528 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2022-03-15 16:54:58,529 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2022-03-15 16:54:58,529 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2022-03-15 16:54:58,530 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2022-03-15 16:54:58,531 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - Loading data from data/ptbdataset/ptb.train.txt
+2022-03-15 16:55:01,724 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - No instances dropped from data/ptbdataset/ptb.train.txt.
+2022-03-15 16:55:01,729 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2022-03-15 16:55:01,731 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - Loading data from data/ptbdataset/ptb.valid.txt
+2022-03-15 16:55:01,989 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - No instances dropped from data/ptbdataset/ptb.valid.txt.
+2022-03-15 16:55:02,015 - INFO - allennlp.common.params - model.type = language_model
+2022-03-15 16:55:02,016 - INFO - allennlp.common.params - model.regularizer = None
+2022-03-15 16:55:02,017 - INFO - allennlp.common.params - model.text_field_embedder.type = ref
+2022-03-15 16:55:02,021 - INFO - allennlp.common.params - model.text_field_embedder.type = basic
+2022-03-15 16:55:02,023 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.type = ref
+2022-03-15 16:55:02,027 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.type = embedding
+2022-03-15 16:55:02,028 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.type = embedding
+2022-03-15 16:55:02,029 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.embedding_dim = 432
+2022-03-15 16:55:02,031 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.num_embeddings = None
+2022-03-15 16:55:02,031 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.projection_dim = None
+2022-03-15 16:55:02,032 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.weight = None
+2022-03-15 16:55:02,033 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.padding_index = None
+2022-03-15 16:55:02,033 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.trainable = True
+2022-03-15 16:55:02,034 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.max_norm = None
+2022-03-15 16:55:02,034 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.norm_type = 2.0
+2022-03-15 16:55:02,035 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.scale_grad_by_freq = False
+2022-03-15 16:55:02,035 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.sparse = False
+2022-03-15 16:55:02,036 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.vocab_namespace = tokens
+2022-03-15 16:55:02,036 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders.tokens.pretrained_file = None
+2022-03-15 16:55:02,078 - INFO - allennlp.common.params - model.contextualizer.type = identity_transformer
+2022-03-15 16:55:02,079 - INFO - allennlp.common.params - model.contextualizer.type = identity_transformer
+2022-03-15 16:55:02,081 - INFO - allennlp.common.params - model.contextualizer.input_dim = 432
+2022-03-15 16:55:02,083 - INFO - allennlp.common.params - model.contextualizer.hidden_dim = 512
+2022-03-15 16:55:02,084 - INFO - allennlp.common.params - model.contextualizer.num_layers = 6
+2022-03-15 16:55:02,085 - INFO - allennlp.common.params - model.contextualizer.dropout = 0.1
+2022-03-15 16:55:02,086 - INFO - allennlp.common.params - model.contextualizer.input_dropout = None
+2022-03-15 16:55:02,087 - INFO - allennlp.common.params - model.contextualizer.return_all_layers = False
+2022-03-15 16:55:02,088 - INFO - allennlp.common.params - model.contextualizer.identity_attention = False
+2022-03-15 16:55:02,345 - INFO - allennlp.common.params - model.dropout = 0.1
+2022-03-15 16:55:02,346 - INFO - allennlp.common.params - model.num_samples = None
+2022-03-15 16:55:02,347 - INFO - allennlp.common.params - model.sparse_embeddings = False
+2022-03-15 16:55:02,347 - INFO - allennlp.common.params - model.bidirectional = True
+2022-03-15 16:55:02,348 - INFO - allennlp.common.params - model.initializer = None
+2022-03-15 16:55:02,471 - INFO - allennlp.common.params - trainer.type = gradient_descent
+2022-03-15 16:55:02,472 - INFO - allennlp.common.params - trainer.cuda_device = None
+2022-03-15 16:55:02,472 - INFO - allennlp.common.params - trainer.distributed = False
+2022-03-15 16:55:02,473 - INFO - allennlp.common.params - trainer.world_size = 1
+2022-03-15 16:55:02,473 - INFO - allennlp.common.params - trainer.patience = None
+2022-03-15 16:55:02,474 - INFO - allennlp.common.params - trainer.validation_metric = -loss
+2022-03-15 16:55:02,475 - INFO - allennlp.common.params - trainer.num_epochs = 3
+2022-03-15 16:55:02,476 - INFO - allennlp.common.params - trainer.grad_norm = False
+2022-03-15 16:55:02,477 - INFO - allennlp.common.params - trainer.grad_clipping = None
+2022-03-15 16:55:02,477 - INFO - allennlp.common.params - trainer.num_gradient_accumulation_steps = 1
+2022-03-15 16:55:02,478 - INFO - allennlp.common.params - trainer.use_amp = False
+2022-03-15 16:55:02,478 - INFO - allennlp.common.params - trainer.no_grad = None
+2022-03-15 16:55:02,479 - INFO - allennlp.common.params - trainer.optimizer.type = dense_sparse_adam
+2022-03-15 16:55:02,479 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.type = noam
+2022-03-15 16:55:02,480 - INFO - allennlp.common.params - trainer.momentum_scheduler = None
+2022-03-15 16:55:02,480 - INFO - allennlp.common.params - trainer.moving_average = None
+2022-03-15 16:55:02,480 - INFO - allennlp.common.params - trainer.checkpointer = <allennlp.common.lazy.Lazy object at 0x0000024C06722548>
+2022-03-15 16:55:02,481 - INFO - allennlp.common.params - trainer.callbacks = None
+2022-03-15 16:55:02,481 - INFO - allennlp.common.params - trainer.enable_default_callbacks = True
+2022-03-15 16:55:02,482 - INFO - allennlp.common.params - trainer.run_confidence_checks = True
+2022-03-15 16:55:02,482 - INFO - allennlp.common.params - trainer.grad_scaling = True
+2022-03-15 16:55:02,484 - INFO - allennlp.common.params - trainer.optimizer.type = dense_sparse_adam
+2022-03-15 16:55:02,485 - INFO - allennlp.common.params - trainer.optimizer.parameter_groups = None
+2022-03-15 16:55:02,486 - INFO - allennlp.common.params - trainer.optimizer.lr = 0.001
+2022-03-15 16:55:02,486 - INFO - allennlp.common.params - trainer.optimizer.betas = (0.9, 0.999)
+2022-03-15 16:55:02,487 - INFO - allennlp.common.params - trainer.optimizer.eps = 1e-08
+2022-03-15 16:55:02,487 - INFO - allennlp.training.optimizers - Number of trainable parameters: 22973491
+2022-03-15 16:55:02,488 - INFO - allennlp.common.util - The following parameters are Frozen (without gradient):
+2022-03-15 16:55:02,490 - INFO - allennlp.common.util - The following parameters are Tunable (with gradient):
+2022-03-15 16:55:02,491 - INFO - allennlp.common.util - _text_field_embedder.token_embedder_tokens.weight
+2022-03-15 16:55:02,491 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.0.weight
+2022-03-15 16:55:02,492 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.0.bias
+2022-03-15 16:55:02,492 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.1.weight
+2022-03-15 16:55:02,493 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.1.bias
+2022-03-15 16:55:02,493 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.2.weight
+2022-03-15 16:55:02,493 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.2.bias
+2022-03-15 16:55:02,494 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.3.weight
+2022-03-15 16:55:02,494 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.self_attn.linears.3.bias
+2022-03-15 16:55:02,495 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.feed_forward.w_1.weight
+2022-03-15 16:55:02,495 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.feed_forward.w_1.bias
+2022-03-15 16:55:02,496 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.feed_forward.w_2.weight
+2022-03-15 16:55:02,496 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.feed_forward.w_2.bias
+2022-03-15 16:55:02,497 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.sublayer.0.norm.gamma
+2022-03-15 16:55:02,497 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.sublayer.0.norm.beta
+2022-03-15 16:55:02,497 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.sublayer.1.norm.gamma
+2022-03-15 16:55:02,498 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.0.sublayer.1.norm.beta
+2022-03-15 16:55:02,498 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.0.weight
+2022-03-15 16:55:02,499 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.0.bias
+2022-03-15 16:55:02,499 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.1.weight
+2022-03-15 16:55:02,500 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.1.bias
+2022-03-15 16:55:02,500 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.2.weight
+2022-03-15 16:55:02,500 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.2.bias
+2022-03-15 16:55:02,501 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.3.weight
+2022-03-15 16:55:02,501 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.self_attn.linears.3.bias
+2022-03-15 16:55:02,502 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.feed_forward.w_1.weight
+2022-03-15 16:55:02,502 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.feed_forward.w_1.bias
+2022-03-15 16:55:02,502 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.feed_forward.w_2.weight
+2022-03-15 16:55:02,503 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.feed_forward.w_2.bias
+2022-03-15 16:55:02,503 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.sublayer.0.norm.gamma
+2022-03-15 16:55:02,504 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.sublayer.0.norm.beta
+2022-03-15 16:55:02,504 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.sublayer.1.norm.gamma
+2022-03-15 16:55:02,504 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.1.sublayer.1.norm.beta
+2022-03-15 16:55:02,505 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.0.weight
+2022-03-15 16:55:02,505 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.0.bias
+2022-03-15 16:55:02,507 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.1.weight
+2022-03-15 16:55:02,507 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.1.bias
+2022-03-15 16:55:02,508 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.2.weight
+2022-03-15 16:55:02,508 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.2.bias
+2022-03-15 16:55:02,508 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.3.weight
+2022-03-15 16:55:02,509 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.self_attn.linears.3.bias
+2022-03-15 16:55:02,509 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.feed_forward.w_1.weight
+2022-03-15 16:55:02,509 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.feed_forward.w_1.bias
+2022-03-15 16:55:02,510 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.feed_forward.w_2.weight
+2022-03-15 16:55:02,510 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.feed_forward.w_2.bias
+2022-03-15 16:55:02,510 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.sublayer.0.norm.gamma
+2022-03-15 16:55:02,511 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.sublayer.0.norm.beta
+2022-03-15 16:55:02,511 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.sublayer.1.norm.gamma
+2022-03-15 16:55:02,511 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.2.sublayer.1.norm.beta
+2022-03-15 16:55:02,511 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.0.weight
+2022-03-15 16:55:02,512 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.0.bias
+2022-03-15 16:55:02,512 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.1.weight
+2022-03-15 16:55:02,513 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.1.bias
+2022-03-15 16:55:02,513 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.2.weight
+2022-03-15 16:55:02,513 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.2.bias
+2022-03-15 16:55:02,514 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.3.weight
+2022-03-15 16:55:02,514 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.self_attn.linears.3.bias
+2022-03-15 16:55:02,515 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.feed_forward.w_1.weight
+2022-03-15 16:55:02,515 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.feed_forward.w_1.bias
+2022-03-15 16:55:02,516 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.feed_forward.w_2.weight
+2022-03-15 16:55:02,516 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.feed_forward.w_2.bias
+2022-03-15 16:55:02,517 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.sublayer.0.norm.gamma
+2022-03-15 16:55:02,520 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.sublayer.0.norm.beta
+2022-03-15 16:55:02,521 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.sublayer.1.norm.gamma
+2022-03-15 16:55:02,522 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.3.sublayer.1.norm.beta
+2022-03-15 16:55:02,522 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.0.weight
+2022-03-15 16:55:02,523 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.0.bias
+2022-03-15 16:55:02,523 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.1.weight
+2022-03-15 16:55:02,524 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.1.bias
+2022-03-15 16:55:02,524 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.2.weight
+2022-03-15 16:55:02,524 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.2.bias
+2022-03-15 16:55:02,525 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.3.weight
+2022-03-15 16:55:02,525 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.self_attn.linears.3.bias
+2022-03-15 16:55:02,525 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.feed_forward.w_1.weight
+2022-03-15 16:55:02,526 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.feed_forward.w_1.bias
+2022-03-15 16:55:02,526 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.feed_forward.w_2.weight
+2022-03-15 16:55:02,526 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.feed_forward.w_2.bias
+2022-03-15 16:55:02,527 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.sublayer.0.norm.gamma
+2022-03-15 16:55:02,527 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.sublayer.0.norm.beta
+2022-03-15 16:55:02,527 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.sublayer.1.norm.gamma
+2022-03-15 16:55:02,527 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.4.sublayer.1.norm.beta
+2022-03-15 16:55:02,528 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.0.weight
+2022-03-15 16:55:02,528 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.0.bias
+2022-03-15 16:55:02,528 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.1.weight
+2022-03-15 16:55:02,529 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.1.bias
+2022-03-15 16:55:02,529 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.2.weight
+2022-03-15 16:55:02,529 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.2.bias
+2022-03-15 16:55:02,530 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.3.weight
+2022-03-15 16:55:02,530 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.self_attn.linears.3.bias
+2022-03-15 16:55:02,531 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.feed_forward.w_1.weight
+2022-03-15 16:55:02,531 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.feed_forward.w_1.bias
+2022-03-15 16:55:02,531 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.feed_forward.w_2.weight
+2022-03-15 16:55:02,531 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.feed_forward.w_2.bias
+2022-03-15 16:55:02,532 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.sublayer.0.norm.gamma
+2022-03-15 16:55:02,532 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.sublayer.0.norm.beta
+2022-03-15 16:55:02,532 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.sublayer.1.norm.gamma
+2022-03-15 16:55:02,533 - INFO - allennlp.common.util - _contextualizer._forward_transformer.layers.5.sublayer.1.norm.beta
+2022-03-15 16:55:02,533 - INFO - allennlp.common.util - _contextualizer._forward_transformer.norm.gamma
+2022-03-15 16:55:02,534 - INFO - allennlp.common.util - _contextualizer._forward_transformer.norm.beta
+2022-03-15 16:55:02,534 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.0.weight
+2022-03-15 16:55:02,535 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.0.bias
+2022-03-15 16:55:02,535 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.1.weight
+2022-03-15 16:55:02,535 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.1.bias
+2022-03-15 16:55:02,536 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.2.weight
+2022-03-15 16:55:02,536 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.2.bias
+2022-03-15 16:55:02,536 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.3.weight
+2022-03-15 16:55:02,537 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.self_attn.linears.3.bias
+2022-03-15 16:55:02,537 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.feed_forward.w_1.weight
+2022-03-15 16:55:02,537 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.feed_forward.w_1.bias
+2022-03-15 16:55:02,538 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.feed_forward.w_2.weight
+2022-03-15 16:55:02,538 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.feed_forward.w_2.bias
+2022-03-15 16:55:02,538 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.sublayer.0.norm.gamma
+2022-03-15 16:55:02,539 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.sublayer.0.norm.beta
+2022-03-15 16:55:02,539 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.sublayer.1.norm.gamma
+2022-03-15 16:55:02,539 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.0.sublayer.1.norm.beta
+2022-03-15 16:55:02,540 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.0.weight
+2022-03-15 16:55:02,540 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.0.bias
+2022-03-15 16:55:02,541 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.1.weight
+2022-03-15 16:55:02,541 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.1.bias
+2022-03-15 16:55:02,541 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.2.weight
+2022-03-15 16:55:02,542 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.2.bias
+2022-03-15 16:55:02,542 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.3.weight
+2022-03-15 16:55:02,543 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.self_attn.linears.3.bias
+2022-03-15 16:55:02,543 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.feed_forward.w_1.weight
+2022-03-15 16:55:02,543 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.feed_forward.w_1.bias
+2022-03-15 16:55:02,544 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.feed_forward.w_2.weight
+2022-03-15 16:55:02,544 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.feed_forward.w_2.bias
+2022-03-15 16:55:02,544 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.sublayer.0.norm.gamma
+2022-03-15 16:55:02,545 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.sublayer.0.norm.beta
+2022-03-15 16:55:02,545 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.sublayer.1.norm.gamma
+2022-03-15 16:55:02,545 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.1.sublayer.1.norm.beta
+2022-03-15 16:55:02,546 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.0.weight
+2022-03-15 16:55:02,546 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.0.bias
+2022-03-15 16:55:02,546 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.1.weight
+2022-03-15 16:55:02,547 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.1.bias
+2022-03-15 16:55:02,547 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.2.weight
+2022-03-15 16:55:02,547 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.2.bias
+2022-03-15 16:55:02,548 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.3.weight
+2022-03-15 16:55:02,548 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.self_attn.linears.3.bias
+2022-03-15 16:55:02,548 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.feed_forward.w_1.weight
+2022-03-15 16:55:02,549 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.feed_forward.w_1.bias
+2022-03-15 16:55:02,549 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.feed_forward.w_2.weight
+2022-03-15 16:55:02,550 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.feed_forward.w_2.bias
+2022-03-15 16:55:02,550 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.sublayer.0.norm.gamma
+2022-03-15 16:55:02,551 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.sublayer.0.norm.beta
+2022-03-15 16:55:02,551 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.sublayer.1.norm.gamma
+2022-03-15 16:55:02,551 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.2.sublayer.1.norm.beta
+2022-03-15 16:55:02,552 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.0.weight
+2022-03-15 16:55:02,553 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.0.bias
+2022-03-15 16:55:02,553 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.1.weight
+2022-03-15 16:55:02,554 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.1.bias
+2022-03-15 16:55:02,554 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.2.weight
+2022-03-15 16:55:02,554 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.2.bias
+2022-03-15 16:55:02,555 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.3.weight
+2022-03-15 16:55:02,555 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.self_attn.linears.3.bias
+2022-03-15 16:55:02,555 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.feed_forward.w_1.weight
+2022-03-15 16:55:02,555 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.feed_forward.w_1.bias
+2022-03-15 16:55:02,556 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.feed_forward.w_2.weight
+2022-03-15 16:55:02,556 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.feed_forward.w_2.bias
+2022-03-15 16:55:02,556 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.sublayer.0.norm.gamma
+2022-03-15 16:55:02,557 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.sublayer.0.norm.beta
+2022-03-15 16:55:02,557 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.sublayer.1.norm.gamma
+2022-03-15 16:55:02,557 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.3.sublayer.1.norm.beta
+2022-03-15 16:55:02,558 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.0.weight
+2022-03-15 16:55:02,558 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.0.bias
+2022-03-15 16:55:02,558 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.1.weight
+2022-03-15 16:55:02,559 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.1.bias
+2022-03-15 16:55:02,559 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.2.weight
+2022-03-15 16:55:02,559 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.2.bias
+2022-03-15 16:55:02,560 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.3.weight
+2022-03-15 16:55:02,560 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.self_attn.linears.3.bias
+2022-03-15 16:55:02,561 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.feed_forward.w_1.weight
+2022-03-15 16:55:02,561 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.feed_forward.w_1.bias
+2022-03-15 16:55:02,561 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.feed_forward.w_2.weight
+2022-03-15 16:55:02,562 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.feed_forward.w_2.bias
+2022-03-15 16:55:02,562 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.sublayer.0.norm.gamma
+2022-03-15 16:55:02,562 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.sublayer.0.norm.beta
+2022-03-15 16:55:02,562 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.sublayer.1.norm.gamma
+2022-03-15 16:55:02,563 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.4.sublayer.1.norm.beta
+2022-03-15 16:55:02,563 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.0.weight
+2022-03-15 16:55:02,564 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.0.bias
+2022-03-15 16:55:02,564 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.1.weight
+2022-03-15 16:55:02,564 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.1.bias
+2022-03-15 16:55:02,565 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.2.weight
+2022-03-15 16:55:02,565 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.2.bias
+2022-03-15 16:55:02,566 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.3.weight
+2022-03-15 16:55:02,566 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.self_attn.linears.3.bias
+2022-03-15 16:55:02,566 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.feed_forward.w_1.weight
+2022-03-15 16:55:02,567 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.feed_forward.w_1.bias
+2022-03-15 16:55:02,567 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.feed_forward.w_2.weight
+2022-03-15 16:55:02,567 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.feed_forward.w_2.bias
+2022-03-15 16:55:02,568 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.sublayer.0.norm.gamma
+2022-03-15 16:55:02,569 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.sublayer.0.norm.beta
+2022-03-15 16:55:02,569 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.sublayer.1.norm.gamma
+2022-03-15 16:55:02,569 - INFO - allennlp.common.util - _contextualizer._backward_transformer.layers.5.sublayer.1.norm.beta
+2022-03-15 16:55:02,570 - INFO - allennlp.common.util - _contextualizer._backward_transformer.norm.gamma
+2022-03-15 16:55:02,570 - INFO - allennlp.common.util - _contextualizer._backward_transformer.norm.beta
+2022-03-15 16:55:02,570 - INFO - allennlp.common.util - _softmax_loss.softmax_w
+2022-03-15 16:55:02,571 - INFO - allennlp.common.util - _softmax_loss.softmax_b
+2022-03-15 16:55:02,572 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.type = noam
+2022-03-15 16:55:02,573 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.model_size = 512
+2022-03-15 16:55:02,574 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.warmup_steps = 6000
+2022-03-15 16:55:02,574 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.factor = 1.0
+2022-03-15 16:55:02,575 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.last_epoch = -1
+2022-03-15 16:55:02,576 - INFO - allennlp.common.params - type = default
+2022-03-15 16:55:02,577 - INFO - allennlp.common.params - save_completed_epochs = True
+2022-03-15 16:55:02,577 - INFO - allennlp.common.params - save_every_num_seconds = None
+2022-03-15 16:55:02,578 - INFO - allennlp.common.params - save_every_num_batches = None
+2022-03-15 16:55:02,611 - INFO - allennlp.common.params - keep_most_recent_by_count = 2
+2022-03-15 16:55:02,611 - INFO - allennlp.common.params - keep_most_recent_by_age = None
+2022-03-15 16:55:02,612 - WARNING - allennlp.training.gradient_descent_trainer - You provided a validation dataset but patience was set to None, meaning that early stopping is disabled
+2022-03-15 16:55:02,615 - INFO - allennlp.training.gradient_descent_trainer - Beginning training.
+2022-03-15 16:55:02,615 - INFO - allennlp.training.gradient_descent_trainer - Epoch 0/2
+2022-03-15 16:55:02,616 - INFO - allennlp.training.gradient_descent_trainer - Worker 0 memory usage: 0B
+2022-03-15 16:55:02,617 - INFO - allennlp.training.gradient_descent_trainer - Training
+2022-03-15 16:55:02,619 - INFO - tqdm - 0it [00:00, ?it/s]
+2022-03-15 16:55:02,619 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2022-03-15 16:55:02,619 - INFO - allennlp_models.lm.dataset_readers.simple_language_modeling - Loading data from data/ptbdataset/ptb.train.txt
+2022-03-15 16:55:02,771 - INFO - allennlp.data.samplers.bucket_batch_sampler - No sorting keys given; trying to guess a good one
+2022-03-15 16:55:02,772 - INFO - allennlp.data.samplers.bucket_batch_sampler - Using ['source'] as the sorting keys
+2022-03-15 16:55:06,773 - INFO - allennlp.training.callbacks.console_logger - Batch inputs
+2022-03-15 16:55:06,774 - INFO - allennlp.training.callbacks.console_logger - batch_input/source/tokens/tokens (Shape: 16 x 51)
+tensor([[   4,  220,  258,  ...,    0,    0,    0],
+        [   4, 1728,  558,  ...,    0,    0,    0],
+        [   4,   26,    3,  ...,    0,    0,    0],
+        ...,
+        [   4,  400, 3337,  ...,  431, 1510,    5],
+        [   4,    2, 1123,  ...,    6,    5,    0],
+        [   4,   26, 2379,  ...,    0,    0,    0]])
+2022-03-15 16:55:13,136 - INFO - tqdm - perplexity: 21064.6808, batch_loss: 9.9946, loss: 9.9554 ||: : 4it [00:10,  2.38s/it]
+2022-03-15 16:55:23,742 - INFO - tqdm - perplexity: 21872.4754, batch_loss: 9.9774, loss: 9.9930 ||: : 10it [00:21,  1.68s/it]
+2022-03-15 16:55:35,173 - INFO - tqdm - perplexity: 21893.8248, batch_loss: 9.9090, loss: 9.9940 ||: : 16it [00:32,  1.80s/it]
+2022-03-15 16:55:45,471 - INFO - tqdm - perplexity: 21483.4815, batch_loss: 9.8594, loss: 9.9750 ||: : 21it [00:42,  2.00s/it]
+2022-03-15 16:55:55,668 - INFO - tqdm - perplexity: 21415.7846, batch_loss: 9.9663, loss: 9.9719 ||: : 27it [00:53,  1.70s/it]
+2022-03-15 16:56:06,979 - INFO - tqdm - perplexity: 20843.1119, batch_loss: 9.7155, loss: 9.9448 ||: : 34it [01:04,  1.62s/it]
+2022-03-15 16:56:17,026 - INFO - tqdm - perplexity: 20292.3311, batch_loss: 9.9354, loss: 9.9180 ||: : 40it [01:14,  1.58s/it]
+2022-03-15 16:56:29,508 - INFO - tqdm - perplexity: 19711.4459, batch_loss: 9.6214, loss: 9.8890 ||: : 45it [01:26,  2.50s/it]
+2022-03-15 16:56:39,814 - INFO - tqdm - perplexity: 19026.4514, batch_loss: 9.4320, loss: 9.8536 ||: : 51it [01:37,  1.64s/it]
+2022-03-15 16:56:50,358 - INFO - tqdm - perplexity: 18086.7714, batch_loss: 9.2656, loss: 9.8029 ||: : 57it [01:47,  1.69s/it]
+2022-03-15 16:57:02,534 - INFO - tqdm - perplexity: 17237.4190, batch_loss: 9.1908, loss: 9.7548 ||: : 63it [01:59,  2.06s/it]
+2022-03-15 16:57:12,981 - INFO - tqdm - perplexity: 16621.7301, batch_loss: 9.1558, loss: 9.7185 ||: : 67it [02:10,  2.63s/it]
+2022-03-15 16:57:24,051 - INFO - tqdm - perplexity: 15992.0697, batch_loss: 9.1445, loss: 9.6798 ||: : 72it [02:21,  2.31s/it]
+2022-03-15 16:57:35,500 - INFO - tqdm - perplexity: 15346.9040, batch_loss: 8.9940, loss: 9.6387 ||: : 77it [02:32,  2.16s/it]
+2022-03-15 16:57:46,745 - INFO - tqdm - perplexity: 14553.9029, batch_loss: 9.0196, loss: 9.5856 ||: : 83it [02:44,  2.17s/it]
+2022-03-15 16:57:58,164 - INFO - tqdm - perplexity: 13617.4788, batch_loss: 8.6203, loss: 9.5191 ||: : 90it [02:55,  1.67s/it]
+2022-03-15 16:58:09,041 - INFO - tqdm - perplexity: 12930.7056, batch_loss: 8.6821, loss: 9.4674 ||: : 96it [03:06,  1.68s/it]
+2022-03-15 16:58:16,857 - INFO - tqdm - loading instances: 2138it [03:14,  9.35it/s]
+2022-03-15 16:58:20,462 - INFO - tqdm - perplexity: 12262.5632, batch_loss: 8.5859, loss: 9.4143 ||: : 102it [03:17,  1.85s/it]
+2022-03-15 16:58:32,011 - INFO - tqdm - perplexity: 11632.1516, batch_loss: 8.5060, loss: 9.3615 ||: : 108it [03:29,  1.85s/it]
+2022-03-15 16:58:43,136 - INFO - tqdm - perplexity: 10985.0230, batch_loss: 8.2743, loss: 9.3043 ||: : 114it [03:40,  1.88s/it]
+2022-03-15 16:58:54,407 - INFO - tqdm - perplexity: 10239.8844, batch_loss: 8.1225, loss: 9.2340 ||: : 121it [03:51,  1.64s/it]
+2022-03-15 16:59:05,615 - INFO - tqdm - perplexity: 9966.5625, batch_loss: 8.3699, loss: 9.2070 ||: : 125it [04:02,  2.59s/it]
+2022-03-15 16:59:16,183 - INFO - tqdm - perplexity: 9604.7121, batch_loss: 8.3552, loss: 9.1700 ||: : 130it [04:13,  2.11s/it]
+2022-03-15 16:59:26,852 - INFO - tqdm - perplexity: 9278.1104, batch_loss: 8.2575, loss: 9.1354 ||: : 135it [04:24,  2.23s/it]
+2022-03-15 16:59:36,953 - INFO - tqdm - perplexity: 8984.0120, batch_loss: 8.1865, loss: 9.1032 ||: : 140it [04:34,  2.09s/it]
+2022-03-15 16:59:48,748 - INFO - tqdm - perplexity: 8617.4981, batch_loss: 7.9606, loss: 9.0616 ||: : 146it [04:46,  2.48s/it]
+2022-03-15 17:00:00,959 - INFO - tqdm - perplexity: 8220.0610, batch_loss: 7.7801, loss: 9.0143 ||: : 152it [04:58,  2.12s/it]
+2022-03-15 17:00:12,540 - INFO - tqdm - perplexity: 7887.8222, batch_loss: 8.1505, loss: 8.9731 ||: : 159it [05:09,  1.69s/it]
+2022-03-15 17:00:23,767 - INFO - tqdm - perplexity: 7561.7101, batch_loss: 7.8677, loss: 8.9309 ||: : 165it [05:21,  2.47s/it]
+2022-03-15 17:00:34,238 - INFO - tqdm - perplexity: 7349.3039, batch_loss: 7.9375, loss: 8.9024 ||: : 170it [05:31,  2.20s/it]
+2022-03-15 17:00:44,869 - INFO - tqdm - perplexity: 7038.3861, batch_loss: 6.7232, loss: 8.8591 ||: : 176it [05:42,  1.62s/it]
+2022-03-15 17:00:56,308 - INFO - tqdm - perplexity: 6728.8758, batch_loss: 7.7178, loss: 8.8142 ||: : 183it [05:53,  1.63s/it]
+2022-03-15 17:01:07,248 - INFO - tqdm - perplexity: 6491.7595, batch_loss: 7.6137, loss: 8.7783 ||: : 189it [06:04,  2.13s/it]
+2022-03-15 17:01:17,802 - INFO - tqdm - perplexity: 6335.9598, batch_loss: 7.8580, loss: 8.7540 ||: : 194it [06:15,  2.02s/it]
+2022-03-15 17:01:28,228 - INFO - tqdm - perplexity: 6112.6240, batch_loss: 7.3587, loss: 8.7181 ||: : 200it [06:25,  1.65s/it]
+2022-03-15 17:01:28,242 - INFO - tqdm - loading instances: 3376it [06:25,  6.69it/s]
+2022-03-15 17:01:38,321 - INFO - tqdm - perplexity: 5956.8119, batch_loss: 7.6168, loss: 8.6923 ||: : 205it [06:35,  1.92s/it]
+2022-03-15 17:01:50,830 - INFO - tqdm - perplexity: 5766.8454, batch_loss: 7.5056, loss: 8.6599 ||: : 211it [06:48,  2.52s/it]
+2022-03-15 17:02:01,428 - INFO - tqdm - perplexity: 5503.9071, batch_loss: 7.4630, loss: 8.6132 ||: : 219it [06:58,  1.46s/it]
+2022-03-15 17:02:12,542 - INFO - tqdm - perplexity: 5314.1116, batch_loss: 7.4765, loss: 8.5781 ||: : 226it [07:09,  1.52s/it]
+2022-03-15 17:02:22,622 - INFO - tqdm - perplexity: 5178.6600, batch_loss: 7.5517, loss: 8.5523 ||: : 231it [07:20,  2.05s/it]
+2022-03-15 17:02:33,460 - INFO - tqdm - perplexity: 5055.1681, batch_loss: 7.3369, loss: 8.5282 ||: : 236it [07:30,  2.13s/it]
+2022-03-15 17:02:44,318 - INFO - tqdm - perplexity: 4934.2262, batch_loss: 7.3693, loss: 8.5040 ||: : 241it [07:41,  2.34s/it]
+2022-03-15 17:02:55,394 - INFO - tqdm - perplexity: 4766.7125, batch_loss: 7.4719, loss: 8.4694 ||: : 248it [07:52,  1.72s/it]
+2022-03-15 17:03:07,086 - INFO - tqdm - perplexity: 4635.3208, batch_loss: 7.2136, loss: 8.4415 ||: : 254it [08:04,  2.06s/it]
+2022-03-15 17:03:17,573 - INFO - tqdm - perplexity: 4448.7577, batch_loss: 7.1343, loss: 8.4004 ||: : 262it [08:14,  1.48s/it]
+2022-03-15 17:03:28,039 - INFO - tqdm - perplexity: 4312.9217, batch_loss: 7.2186, loss: 8.3694 ||: : 269it [08:25,  1.59s/it]
+2022-03-15 17:03:39,770 - INFO - tqdm - perplexity: 4231.2187, batch_loss: 7.1718, loss: 8.3502 ||: : 273it [08:37,  2.71s/it]
+2022-03-15 17:03:49,891 - INFO - tqdm - perplexity: 4136.9055, batch_loss: 7.1324, loss: 8.3277 ||: : 278it [08:47,  2.01s/it]
+2022-03-15 17:04:01,620 - INFO - tqdm - perplexity: 4018.4408, batch_loss: 7.3608, loss: 8.2986 ||: : 285it [08:58,  1.83s/it]
+2022-03-15 17:04:12,384 - INFO - tqdm - perplexity: 3937.9049, batch_loss: 7.1664, loss: 8.2784 ||: : 290it [09:09,  2.17s/it]
+2022-03-15 17:04:22,399 - INFO - tqdm - perplexity: 3853.8911, batch_loss: 6.5953, loss: 8.2568 ||: : 295it [09:19,  1.78s/it]
+2022-03-15 17:04:31,785 - INFO - tqdm - loading instances: 5512it [09:29,  8.32it/s]
+2022-03-15 17:04:34,469 - INFO - tqdm - perplexity: 3759.8406, batch_loss: 7.1665, loss: 8.2321 ||: : 301it [09:31,  2.24s/it]
+2022-03-15 17:04:45,465 - INFO - tqdm - perplexity: 3693.2218, batch_loss: 7.1742, loss: 8.2143 ||: : 306it [09:42,  2.58s/it]
+2022-03-15 17:04:56,223 - INFO - tqdm - perplexity: 3625.7327, batch_loss: 6.8162, loss: 8.1958 ||: : 311it [09:53,  2.11s/it]
+2022-03-15 17:05:06,516 - INFO - tqdm - perplexity: 3562.9646, batch_loss: 7.2715, loss: 8.1783 ||: : 316it [10:03,  2.10s/it]
+2022-03-15 17:05:17,365 - INFO - tqdm - perplexity: 3500.5006, batch_loss: 6.8445, loss: 8.1607 ||: : 321it [10:14,  2.13s/it]
+2022-03-15 17:05:29,235 - INFO - tqdm - perplexity: 3454.2281, batch_loss: 7.3179, loss: 8.1474 ||: : 325it [10:26,  3.16s/it]
+2022-03-15 17:05:41,831 - INFO - tqdm - perplexity: 3407.1911, batch_loss: 6.8761, loss: 8.1336 ||: : 329it [10:39,  3.11s/it]
+2022-03-15 17:05:52,729 - INFO - tqdm - perplexity: 3346.6350, batch_loss: 6.9588, loss: 8.1157 ||: : 334it [10:50,  2.23s/it]
+2022-03-15 17:06:05,644 - INFO - tqdm - perplexity: 3281.2199, batch_loss: 7.0908, loss: 8.0960 ||: : 340it [11:03,  2.31s/it]
+2022-03-15 17:06:15,885 - INFO - tqdm - perplexity: 3225.0558, batch_loss: 6.5535, loss: 8.0787 ||: : 345it [11:13,  1.90s/it]
+2022-03-15 17:06:26,376 - INFO - tqdm - perplexity: 3179.8526, batch_loss: 6.9987, loss: 8.0646 ||: : 349it [11:23,  2.42s/it]
+2022-03-15 17:06:38,676 - INFO - tqdm - perplexity: 3130.2121, batch_loss: 6.9875, loss: 8.0489 ||: : 354it [11:36,  2.37s/it]
+2022-03-15 17:06:50,267 - INFO - tqdm - perplexity: 3069.8857, batch_loss: 6.9728, loss: 8.0294 ||: : 360it [11:47,  2.03s/it]
+2022-03-15 17:07:01,541 - INFO - tqdm - perplexity: 2996.4211, batch_loss: 6.8951, loss: 8.0052 ||: : 367it [11:58,  1.83s/it]
+2022-03-15 17:07:12,180 - INFO - tqdm - perplexity: 2943.8361, batch_loss: 6.8218, loss: 7.9875 ||: : 373it [12:09,  1.72s/it]
+2022-03-15 17:07:28,641 - INFO - tqdm - perplexity: 2890.0421, batch_loss: 6.9248, loss: 7.9690 ||: : 379it [12:26,  3.43s/it]
+2022-03-15 17:07:40,395 - INFO - tqdm - perplexity: 2858.6807, batch_loss: 6.8491, loss: 7.9581 ||: : 383it [12:37,  2.91s/it]
+2022-03-15 17:07:53,818 - INFO - tqdm - perplexity: 2829.3728, batch_loss: 6.7769, loss: 7.9478 ||: : 387it [12:51,  3.23s/it]
+2022-03-15 17:08:09,990 - INFO - tqdm - perplexity: 2786.0519, batch_loss: 6.7723, loss: 7.9324 ||: : 392it [13:07,  3.92s/it]
+2022-03-15 17:08:20,601 - INFO - tqdm - perplexity: 2751.3907, batch_loss: 6.5869, loss: 7.9199 ||: : 396it [13:17,  2.77s/it]
+2022-03-15 17:08:31,122 - INFO - tqdm - perplexity: 2721.6154, batch_loss: 6.6182, loss: 7.9090 ||: : 400it [13:28,  2.64s/it]
+2022-03-15 17:08:31,123 - INFO - tqdm - loading instances: 6400it [13:28,  5.95it/s]
+2022-03-15 17:08:41,883 - INFO - tqdm - perplexity: 2700.2177, batch_loss: 6.9007, loss: 7.9011 ||: : 403it [13:39,  3.27s/it]
+2022-03-15 17:08:53,352 - INFO - tqdm - perplexity: 2666.4794, batch_loss: 6.8349, loss: 7.8885 ||: : 408it [13:50,  2.38s/it]
+2022-03-15 17:09:04,856 - INFO - tqdm - perplexity: 2621.0976, batch_loss: 6.3236, loss: 7.8713 ||: : 414it [14:02,  1.98s/it]
+2022-03-15 17:09:16,900 - INFO - tqdm - perplexity: 2586.7240, batch_loss: 6.7714, loss: 7.8581 ||: : 419it [14:14,  2.37s/it]
+2022-03-15 17:09:29,155 - INFO - tqdm - perplexity: 2556.8468, batch_loss: 6.8823, loss: 7.8465 ||: : 424it [14:26,  2.48s/it]
+2022-03-15 17:09:40,961 - INFO - tqdm - perplexity: 2521.8893, batch_loss: 6.7757, loss: 7.8328 ||: : 429it [14:38,  2.77s/it]
+2022-03-15 17:09:54,809 - INFO - tqdm - perplexity: 2498.1274, batch_loss: 6.8663, loss: 7.8233 ||: : 433it [14:52,  3.32s/it]
+2022-03-15 17:10:05,766 - INFO - tqdm - perplexity: 2480.5361, batch_loss: 6.7481, loss: 7.8162 ||: : 436it [15:03,  3.67s/it]
+2022-03-15 17:10:17,991 - INFO - tqdm - perplexity: 2431.3564, batch_loss: 6.6357, loss: 7.7962 ||: : 443it [15:15,  2.08s/it]
+2022-03-15 17:10:28,915 - INFO - tqdm - perplexity: 2390.0004, batch_loss: 6.9152, loss: 7.7790 ||: : 449it [15:26,  1.71s/it]
+2022-03-15 17:10:41,375 - INFO - tqdm - perplexity: 2354.0616, batch_loss: 6.8998, loss: 7.7639 ||: : 455it [15:38,  2.15s/it]
+2022-03-15 17:10:53,377 - INFO - tqdm - perplexity: 2334.2029, batch_loss: 7.0201, loss: 7.7554 ||: : 459it [15:50,  2.63s/it]
+2022-03-15 17:11:03,574 - INFO - tqdm - perplexity: 2301.6759, batch_loss: 6.5380, loss: 7.7414 ||: : 464it [16:00,  2.44s/it]
+2022-03-15 17:11:14,309 - INFO - tqdm - perplexity: 2265.6466, batch_loss: 6.7495, loss: 7.7256 ||: : 470it [16:11,  1.79s/it]
+2022-03-15 17:11:25,379 - INFO - tqdm - perplexity: 2235.6635, batch_loss: 6.6823, loss: 7.7123 ||: : 476it [16:22,  1.92s/it]
+2022-03-15 17:11:38,332 - INFO - tqdm - perplexity: 2216.6608, batch_loss: 6.7640, loss: 7.7038 ||: : 480it [16:35,  3.20s/it]
+2022-03-15 17:11:51,888 - INFO - tqdm - perplexity: 2192.7337, batch_loss: 6.7445, loss: 7.6929 ||: : 485it [16:49,  3.23s/it]
+2022-03-15 17:12:02,739 - INFO - tqdm - perplexity: 2180.3308, batch_loss: 6.5106, loss: 7.6872 ||: : 488it [17:00,  3.52s/it]
+2022-03-15 17:12:15,361 - INFO - tqdm - perplexity: 2162.0069, batch_loss: 6.5856, loss: 7.6788 ||: : 492it [17:12,  3.21s/it]
+2022-03-15 17:12:25,880 - INFO - tqdm - perplexity: 2142.0584, batch_loss: 6.5492, loss: 7.6695 ||: : 496it [17:23,  2.79s/it]
+2022-03-15 17:12:34,354 - INFO - tqdm - loading instances: 8388it [17:31,  6.43it/s]
+2022-03-15 17:12:37,721 - INFO - tqdm - perplexity: 2119.1355, batch_loss: 6.7383, loss: 7.6588 ||: : 501it [17:35,  2.77s/it]
+2022-03-15 17:12:49,337 - INFO - tqdm - perplexity: 2099.7487, batch_loss: 6.3536, loss: 7.6496 ||: : 506it [17:46,  2.27s/it]
+2022-03-15 17:13:00,879 - INFO - tqdm - perplexity: 2084.8752, batch_loss: 6.5983, loss: 7.6425 ||: : 510it [17:58,  2.62s/it]
+2022-03-15 17:13:13,482 - INFO - tqdm - perplexity: 2069.3673, batch_loss: 6.5087, loss: 7.6350 ||: : 514it [18:10,  3.25s/it]
+2022-03-15 17:13:23,768 - INFO - tqdm - perplexity: 2055.3069, batch_loss: 6.8586, loss: 7.6282 ||: : 518it [18:21,  2.76s/it]
+2022-03-15 17:13:35,386 - INFO - tqdm - perplexity: 2044.9930, batch_loss: 6.8993, loss: 7.6231 ||: : 521it [18:32,  3.63s/it]
+2022-03-15 17:13:48,474 - INFO - tqdm - perplexity: 2031.6157, batch_loss: 6.7141, loss: 7.6166 ||: : 525it [18:45,  3.31s/it]
+2022-03-15 17:14:01,207 - INFO - tqdm - perplexity: 2018.1978, batch_loss: 6.4326, loss: 7.6100 ||: : 529it [18:58,  3.19s/it]
+2022-03-15 17:14:12,127 - INFO - tqdm - perplexity: 2007.6162, batch_loss: 6.7695, loss: 7.6047 ||: : 532it [19:09,  3.65s/it]
+2022-03-15 17:14:22,991 - INFO - tqdm - perplexity: 1987.8588, batch_loss: 6.7001, loss: 7.5948 ||: : 537it [19:20,  2.44s/it]
+2022-03-15 17:14:35,026 - INFO - tqdm - perplexity: 1977.8693, batch_loss: 6.9030, loss: 7.5898 ||: : 541it [19:32,  2.82s/it]
+2022-03-15 17:14:45,829 - INFO - tqdm - perplexity: 1959.3729, batch_loss: 6.6942, loss: 7.5804 ||: : 546it [19:43,  2.62s/it]
+2022-03-15 17:14:56,876 - INFO - tqdm - perplexity: 1945.1691, batch_loss: 6.8705, loss: 7.5731 ||: : 551it [19:54,  2.44s/it]
+2022-03-15 17:15:08,967 - INFO - tqdm - perplexity: 1928.6783, batch_loss: 6.5114, loss: 7.5646 ||: : 556it [20:06,  2.59s/it]
+2022-03-15 17:15:20,811 - INFO - tqdm - perplexity: 1912.4591, batch_loss: 6.7778, loss: 7.5561 ||: : 561it [20:18,  2.48s/it]
+2022-03-15 17:15:32,207 - INFO - tqdm - perplexity: 1894.4247, batch_loss: 6.7689, loss: 7.5467 ||: : 566it [20:29,  2.54s/it]
+2022-03-15 17:15:43,227 - INFO - tqdm - perplexity: 1879.6790, batch_loss: 6.8041, loss: 7.5389 ||: : 571it [20:40,  2.24s/it]
+2022-03-15 17:15:53,294 - INFO - tqdm - perplexity: 1862.6609, batch_loss: 6.6632, loss: 7.5298 ||: : 576it [20:50,  2.13s/it]
+2022-03-15 17:16:08,959 - INFO - tqdm - perplexity: 1851.2154, batch_loss: 6.7543, loss: 7.5236 ||: : 580it [21:06,  4.08s/it]
+2022-03-15 17:16:20,685 - INFO - tqdm - perplexity: 1840.1904, batch_loss: 6.7018, loss: 7.5176 ||: : 584it [21:18,  3.10s/it]
+2022-03-15 17:16:31,291 - INFO - tqdm - perplexity: 1825.9295, batch_loss: 6.5747, loss: 7.5098 ||: : 589it [21:28,  2.20s/it]
+2022-03-15 17:16:42,252 - INFO - tqdm - perplexity: 1812.9956, batch_loss: 6.9074, loss: 7.5027 ||: : 594it [21:39,  2.57s/it]
+2022-03-15 17:16:53,904 - INFO - tqdm - perplexity: 1802.6451, batch_loss: 6.8286, loss: 7.4970 ||: : 598it [21:51,  3.13s/it]
+2022-03-15 17:16:58,654 - INFO - tqdm - loading instances: 9903it [21:56,  5.54it/s]
+2022-03-15 17:17:04,339 - INFO - tqdm - perplexity: 1791.1515, batch_loss: 6.6753, loss: 7.4906 ||: : 602it [22:01,  2.68s/it]
+2022-03-15 17:17:15,576 - INFO - tqdm - perplexity: 1773.5477, batch_loss: 6.5162, loss: 7.4807 ||: : 608it [22:12,  2.35s/it]
+2022-03-15 17:17:25,908 - INFO - tqdm - perplexity: 1763.8936, batch_loss: 6.7806, loss: 7.4753 ||: : 612it [22:23,  2.55s/it]
+2022-03-15 17:17:36,597 - INFO - tqdm - perplexity: 1748.3181, batch_loss: 6.4518, loss: 7.4664 ||: : 618it [22:33,  1.91s/it]
+2022-03-15 17:17:47,109 - INFO - tqdm - perplexity: 1738.6444, batch_loss: 6.5172, loss: 7.4609 ||: : 622it [22:44,  2.42s/it]
+2022-03-15 17:17:57,334 - INFO - tqdm - perplexity: 1726.0337, batch_loss: 6.4729, loss: 7.4536 ||: : 627it [22:54,  2.05s/it]
+2022-03-15 17:18:08,567 - INFO - tqdm - perplexity: 1711.5682, batch_loss: 6.3001, loss: 7.4452 ||: : 633it [23:05,  1.83s/it]
+2022-03-15 17:18:20,880 - INFO - tqdm - perplexity: 1702.4538, batch_loss: 6.6037, loss: 7.4398 ||: : 637it [23:18,  2.62s/it]
+2022-03-15 17:18:32,497 - INFO - tqdm - perplexity: 1687.1710, batch_loss: 6.1310, loss: 7.4308 ||: : 643it [23:29,  1.92s/it]
+2022-03-15 17:18:43,825 - INFO - tqdm - perplexity: 1672.6171, batch_loss: 6.5126, loss: 7.4221 ||: : 649it [23:41,  1.94s/it]
+2022-03-15 17:18:54,026 - INFO - tqdm - perplexity: 1656.7686, batch_loss: 6.7076, loss: 7.4126 ||: : 655it [23:51,  1.84s/it]
+2022-03-15 17:19:06,337 - INFO - tqdm - perplexity: 1647.5527, batch_loss: 6.7081, loss: 7.4070 ||: : 660it [24:03,  2.54s/it]
+2022-03-15 17:19:17,880 - INFO - tqdm - perplexity: 1636.5676, batch_loss: 6.4823, loss: 7.4004 ||: : 665it [24:15,  2.43s/it]
+2022-03-15 17:19:29,667 - INFO - tqdm - perplexity: 1621.1004, batch_loss: 6.6234, loss: 7.3909 ||: : 671it [24:27,  2.23s/it]
+2022-03-15 17:19:42,003 - INFO - tqdm - perplexity: 1614.5511, batch_loss: 6.8757, loss: 7.3868 ||: : 675it [24:39,  3.03s/it]
+2022-03-15 17:19:54,407 - INFO - tqdm - perplexity: 1603.8901, batch_loss: 6.5974, loss: 7.3802 ||: : 680it [24:51,  2.71s/it]
+2022-03-15 17:20:05,436 - INFO - tqdm - perplexity: 1596.9138, batch_loss: 6.5199, loss: 7.3758 ||: : 684it [25:02,  2.57s/it]
+2022-03-15 17:20:17,377 - INFO - tqdm - perplexity: 1584.1694, batch_loss: 6.4570, loss: 7.3678 ||: : 690it [25:14,  2.21s/it]
+2022-03-15 17:20:27,636 - INFO - tqdm - perplexity: 1574.3754, batch_loss: 6.6106, loss: 7.3616 ||: : 695it [25:25,  2.02s/it]
+2022-03-15 17:20:36,400 - INFO - tqdm - loading instances: 11200it [25:33,  5.41it/s]
+2022-03-15 17:20:40,230 - INFO - tqdm - perplexity: 1564.0484, batch_loss: 6.8725, loss: 7.3550 ||: : 701it [25:37,  2.41s/it]
+2022-03-15 17:20:50,732 - INFO - tqdm - perplexity: 1558.2239, batch_loss: 6.8715, loss: 7.3513 ||: : 705it [25:48,  2.46s/it]
+2022-03-15 17:21:00,885 - INFO - tqdm - perplexity: 1552.9059, batch_loss: 6.4639, loss: 7.3479 ||: : 708it [25:58,  2.76s/it]
+2022-03-15 17:21:11,863 - INFO - tqdm - perplexity: 1544.2819, batch_loss: 6.5427, loss: 7.3423 ||: : 713it [26:09,  2.28s/it]
+2022-03-15 17:21:22,764 - INFO - tqdm - perplexity: 1534.8011, batch_loss: 6.4212, loss: 7.3362 ||: : 719it [26:20,  1.97s/it]
+2022-03-15 17:21:33,936 - INFO - tqdm - perplexity: 1527.4787, batch_loss: 6.6592, loss: 7.3314 ||: : 724it [26:31,  2.21s/it]
+2022-03-15 17:21:44,177 - INFO - tqdm - perplexity: 1519.3800, batch_loss: 6.6292, loss: 7.3261 ||: : 729it [26:41,  2.07s/it]
+2022-03-15 17:21:54,499 - INFO - tqdm - perplexity: 1507.7659, batch_loss: 6.4155, loss: 7.3184 ||: : 735it [26:51,  1.79s/it]
+2022-03-15 17:22:04,785 - INFO - tqdm - perplexity: 1499.7387, batch_loss: 6.3422, loss: 7.3130 ||: : 740it [27:02,  1.98s/it]
+2022-03-15 17:22:15,000 - INFO - tqdm - perplexity: 1489.3377, batch_loss: 6.0516, loss: 7.3061 ||: : 746it [27:12,  1.59s/it]
+2022-03-15 17:22:25,429 - INFO - tqdm - perplexity: 1483.4355, batch_loss: 6.5674, loss: 7.3021 ||: : 750it [27:22,  2.18s/it]
+2022-03-15 17:22:36,265 - INFO - tqdm - perplexity: 1470.6683, batch_loss: 6.5710, loss: 7.2935 ||: : 756it [27:33,  1.90s/it]
+2022-03-15 17:22:47,596 - INFO - tqdm - perplexity: 1461.1993, batch_loss: 6.4809, loss: 7.2870 ||: : 762it [27:44,  2.00s/it]
+2022-03-15 17:23:00,306 - INFO - tqdm - perplexity: 1454.1375, batch_loss: 6.5700, loss: 7.2822 ||: : 767it [27:57,  2.74s/it]
+2022-03-15 17:23:12,389 - INFO - tqdm - perplexity: 1445.3889, batch_loss: 6.5183, loss: 7.2761 ||: : 773it [28:09,  2.13s/it]
+2022-03-15 17:23:26,018 - INFO - tqdm - perplexity: 1437.4029, batch_loss: 6.7228, loss: 7.2706 ||: : 779it [28:23,  2.57s/it]
+2022-03-15 17:23:39,414 - INFO - tqdm - perplexity: 1428.7396, batch_loss: 6.8927, loss: 7.2645 ||: : 785it [28:36,  2.69s/it]
+2022-03-15 17:23:51,212 - INFO - tqdm - perplexity: 1421.8331, batch_loss: 6.6433, loss: 7.2597 ||: : 790it [28:48,  2.32s/it]
+2022-03-15 17:24:02,665 - INFO - tqdm - perplexity: 1416.1742, batch_loss: 6.6403, loss: 7.2557 ||: : 795it [29:00,  2.28s/it]
+2022-03-15 17:24:13,535 - INFO - tqdm - perplexity: 1409.4355, batch_loss: 6.4296, loss: 7.2509 ||: : 800it [29:10,  1.93s/it]
+2022-03-15 17:24:13,545 - INFO - tqdm - loading instances: 12884it [29:10,  5.91it/s]
+2022-03-15 17:24:26,139 - INFO - tqdm - perplexity: 1403.2130, batch_loss: 6.4015, loss: 7.2465 ||: : 805it [29:23,  2.56s/it]
+2022-03-15 17:24:37,209 - INFO - tqdm - perplexity: 1393.9857, batch_loss: 6.7662, loss: 7.2399 ||: : 812it [29:34,  1.87s/it]
+2022-03-15 17:24:47,838 - INFO - tqdm - perplexity: 1388.1083, batch_loss: 6.4150, loss: 7.2357 ||: : 817it [29:45,  2.09s/it]
+2022-03-15 17:24:58,090 - INFO - tqdm - perplexity: 1381.9030, batch_loss: 6.5466, loss: 7.2312 ||: : 822it [29:55,  1.96s/it]
+2022-03-15 17:25:10,547 - INFO - tqdm - perplexity: 1377.4198, batch_loss: 6.7609, loss: 7.2280 ||: : 826it [30:07,  2.88s/it]
+2022-03-15 17:25:23,387 - INFO - tqdm - perplexity: 1371.7570, batch_loss: 6.7140, loss: 7.2238 ||: : 831it [30:20,  3.01s/it]
+2022-03-15 17:25:34,155 - INFO - tqdm - perplexity: 1363.3855, batch_loss: 6.3775, loss: 7.2177 ||: : 838it [30:31,  1.75s/it]
+2022-03-15 17:25:44,268 - INFO - tqdm - perplexity: 1357.6782, batch_loss: 6.6869, loss: 7.2135 ||: : 843it [30:41,  1.91s/it]
+2022-03-15 17:25:54,743 - INFO - tqdm - perplexity: 1349.9451, batch_loss: 6.4581, loss: 7.2078 ||: : 849it [30:52,  1.59s/it]
+2022-03-15 17:26:05,447 - INFO - tqdm - perplexity: 1344.0146, batch_loss: 6.4646, loss: 7.2034 ||: : 854it [31:02,  2.02s/it]
+2022-03-15 17:26:15,680 - INFO - tqdm - perplexity: 1339.0925, batch_loss: 6.7003, loss: 7.1997 ||: : 859it [31:13,  2.14s/it]
+2022-03-15 17:26:26,544 - INFO - tqdm - perplexity: 1332.5998, batch_loss: 6.5582, loss: 7.1949 ||: : 865it [31:23,  1.80s/it]
+2022-03-15 17:26:37,460 - INFO - tqdm - perplexity: 1327.7777, batch_loss: 6.4134, loss: 7.1913 ||: : 870it [31:34,  2.11s/it]
+2022-03-15 17:26:47,670 - INFO - tqdm - perplexity: 1323.8862, batch_loss: 6.7707, loss: 7.1883 ||: : 874it [31:45,  2.49s/it]
+2022-03-15 17:26:57,718 - INFO - tqdm - perplexity: 1318.9262, batch_loss: 6.5642, loss: 7.1846 ||: : 878it [31:55,  2.72s/it]
+2022-03-15 17:27:08,919 - INFO - tqdm - perplexity: 1314.2864, batch_loss: 6.6587, loss: 7.1810 ||: : 883it [32:06,  2.45s/it]
+2022-03-15 17:27:19,172 - INFO - tqdm - perplexity: 1309.8784, batch_loss: 6.4231, loss: 7.1777 ||: : 887it [32:16,  2.43s/it]
+2022-03-15 17:27:29,675 - INFO - tqdm - perplexity: 1303.0532, batch_loss: 6.3403, loss: 7.1725 ||: : 893it [32:27,  1.90s/it]
+2022-03-15 17:27:40,192 - INFO - tqdm - perplexity: 1299.6370, batch_loss: 6.5927, loss: 7.1698 ||: : 897it [32:37,  2.58s/it]
+2022-03-15 17:27:46,565 - INFO - tqdm - loading instances: 14797it [32:43,  6.68it/s]
+2022-03-15 17:27:50,436 - INFO - tqdm - perplexity: 1294.8758, batch_loss: 6.2510, loss: 7.1662 ||: : 902it [32:47,  2.11s/it]
+2022-03-15 17:28:00,819 - INFO - tqdm - perplexity: 1288.9907, batch_loss: 6.5885, loss: 7.1616 ||: : 909it [32:58,  1.55s/it]
+2022-03-15 17:28:11,164 - INFO - tqdm - perplexity: 1284.7036, batch_loss: 6.7778, loss: 7.1583 ||: : 914it [33:08,  2.19s/it]
+2022-03-15 17:28:24,427 - INFO - tqdm - perplexity: 1278.6374, batch_loss: 6.3588, loss: 7.1536 ||: : 920it [33:21,  2.51s/it]
+2022-03-15 17:28:34,719 - INFO - tqdm - perplexity: 1273.6840, batch_loss: 6.7048, loss: 7.1497 ||: : 925it [33:32,  1.92s/it]
+2022-03-15 17:28:46,852 - INFO - tqdm - perplexity: 1270.9284, batch_loss: 6.7054, loss: 7.1475 ||: : 929it [33:44,  2.99s/it]
+2022-03-15 17:28:58,445 - INFO - tqdm - perplexity: 1266.7817, batch_loss: 6.3815, loss: 7.1442 ||: : 934it [33:55,  2.42s/it]
+2022-03-15 17:29:08,886 - INFO - tqdm - perplexity: 1262.3837, batch_loss: 6.1599, loss: 7.1408 ||: : 939it [34:06,  1.98s/it]
+2022-03-15 17:29:20,168 - INFO - tqdm - perplexity: 1257.2268, batch_loss: 6.5671, loss: 7.1367 ||: : 945it [34:17,  2.00s/it]
+2022-03-15 17:29:30,751 - INFO - tqdm - perplexity: 1253.1787, batch_loss: 6.2668, loss: 7.1334 ||: : 950it [34:28,  2.12s/it]
+2022-03-15 17:29:42,862 - INFO - tqdm - perplexity: 1248.9673, batch_loss: 6.7811, loss: 7.1301 ||: : 955it [34:40,  2.42s/it]
+2022-03-15 17:29:54,429 - INFO - tqdm - perplexity: 1244.1953, batch_loss: 6.2717, loss: 7.1262 ||: : 961it [34:51,  1.81s/it]
+2022-03-15 17:30:06,702 - INFO - tqdm - perplexity: 1236.3934, batch_loss: 6.5395, loss: 7.1200 ||: : 968it [35:04,  2.01s/it]
+2022-03-15 17:30:19,368 - INFO - tqdm - perplexity: 1231.5327, batch_loss: 6.5844, loss: 7.1160 ||: : 974it [35:16,  2.25s/it]
+2022-03-15 17:30:30,853 - INFO - tqdm - perplexity: 1226.7859, batch_loss: 6.5461, loss: 7.1122 ||: : 979it [35:28,  2.38s/it]
+2022-03-15 17:30:41,942 - INFO - tqdm - perplexity: 1221.4774, batch_loss: 6.3533, loss: 7.1078 ||: : 985it [35:39,  1.98s/it]
+2022-03-15 17:30:54,826 - INFO - tqdm - perplexity: 1218.8927, batch_loss: 6.5581, loss: 7.1057 ||: : 989it [35:52,  3.14s/it]
+2022-03-15 17:31:07,071 - INFO - tqdm - perplexity: 1213.8128, batch_loss: 6.4518, loss: 7.1015 ||: : 995it [36:04,  2.29s/it]
+2022-03-15 17:31:17,294 - INFO - tqdm - perplexity: 1209.9393, batch_loss: 6.4450, loss: 7.0983 ||: : 1000it [36:14,  2.09s/it]
+2022-03-15 17:31:17,295 - INFO - tqdm - loading instances: 16000it [36:14,  5.83it/s]
+2022-03-15 17:31:31,093 - INFO - tqdm - perplexity: 1206.0984, batch_loss: 6.5860, loss: 7.0951 ||: : 1005it [36:28,  3.18s/it]
+2022-03-15 17:31:43,313 - INFO - tqdm - perplexity: 1202.9151, batch_loss: 6.6903, loss: 7.0925 ||: : 1010it [36:40,  2.62s/it]
+2022-03-15 17:31:54,646 - INFO - tqdm - perplexity: 1199.1443, batch_loss: 6.8305, loss: 7.0894 ||: : 1016it [36:52,  1.92s/it]
+2022-03-15 17:32:05,012 - INFO - tqdm - perplexity: 1195.2151, batch_loss: 6.1699, loss: 7.0861 ||: : 1021it [37:02,  2.00s/it]
+2022-03-15 17:32:17,135 - INFO - tqdm - perplexity: 1191.1969, batch_loss: 6.2867, loss: 7.0827 ||: : 1027it [37:14,  2.05s/it]
+2022-03-15 17:32:27,294 - INFO - tqdm - perplexity: 1186.7172, batch_loss: 6.2238, loss: 7.0789 ||: : 1032it [37:24,  1.88s/it]
+2022-03-15 17:32:38,706 - INFO - tqdm - perplexity: 1183.2567, batch_loss: 6.2962, loss: 7.0760 ||: : 1037it [37:36,  1.99s/it]
+2022-03-15 17:32:49,205 - INFO - tqdm - perplexity: 1178.2977, batch_loss: 6.4873, loss: 7.0718 ||: : 1043it [37:46,  1.91s/it]
+2022-03-15 17:32:59,623 - INFO - tqdm - perplexity: 1173.7380, batch_loss: 6.5910, loss: 7.0679 ||: : 1049it [37:57,  1.72s/it]
+2022-03-15 17:33:10,983 - INFO - tqdm - perplexity: 1168.6656, batch_loss: 6.3685, loss: 7.0636 ||: : 1055it [38:08,  1.99s/it]
+2022-03-15 17:33:22,388 - INFO - tqdm - perplexity: 1165.6147, batch_loss: 6.4335, loss: 7.0610 ||: : 1060it [38:19,  2.23s/it]
+2022-03-15 17:33:33,680 - INFO - tqdm - perplexity: 1162.5657, batch_loss: 6.3280, loss: 7.0584 ||: : 1065it [38:31,  2.29s/it]
+2022-03-15 17:33:44,636 - INFO - tqdm - perplexity: 1158.3452, batch_loss: 6.4218, loss: 7.0547 ||: : 1070it [38:42,  2.68s/it]
+2022-03-15 17:33:57,533 - INFO - tqdm - perplexity: 1154.4898, batch_loss: 6.4744, loss: 7.0514 ||: : 1076it [38:54,  2.54s/it]
+2022-03-15 17:34:09,489 - INFO - tqdm - perplexity: 1152.3424, batch_loss: 6.5212, loss: 7.0496 ||: : 1080it [39:06,  2.93s/it]
+2022-03-15 17:34:22,526 - INFO - tqdm - perplexity: 1148.5752, batch_loss: 6.6518, loss: 7.0463 ||: : 1086it [39:19,  2.39s/it]
+2022-03-15 17:34:36,023 - INFO - tqdm - perplexity: 1145.3498, batch_loss: 6.7161, loss: 7.0435 ||: : 1091it [39:33,  2.95s/it]
+2022-03-15 17:34:48,307 - INFO - tqdm - perplexity: 1142.0857, batch_loss: 6.6654, loss: 7.0406 ||: : 1097it [39:45,  2.28s/it]
+2022-03-15 17:34:56,134 - INFO - tqdm - loading instances: 17815it [39:53,  6.34it/s]
+2022-03-15 17:35:00,044 - INFO - tqdm - perplexity: 1139.5329, batch_loss: 6.6582, loss: 7.0384 ||: : 1101it [39:57,  3.01s/it]
+2022-03-15 17:35:10,284 - INFO - tqdm - perplexity: 1136.8249, batch_loss: 6.1197, loss: 7.0360 ||: : 1106it [40:07,  2.12s/it]
+2022-03-15 17:35:22,285 - INFO - tqdm - perplexity: 1134.8644, batch_loss: 6.6999, loss: 7.0343 ||: : 1111it [40:19,  2.35s/it]
+2022-03-15 17:35:33,231 - INFO - tqdm - perplexity: 1132.9502, batch_loss: 6.6309, loss: 7.0326 ||: : 1115it [40:30,  2.81s/it]
+2022-03-15 17:35:44,564 - INFO - tqdm - perplexity: 1129.1809, batch_loss: 6.4948, loss: 7.0292 ||: : 1121it [40:41,  1.88s/it]
+2022-03-15 17:35:54,620 - INFO - tqdm - perplexity: 1126.2877, batch_loss: 6.5966, loss: 7.0267 ||: : 1126it [40:52,  1.87s/it]
+2022-03-15 17:36:05,933 - INFO - tqdm - perplexity: 1121.3061, batch_loss: 6.6469, loss: 7.0222 ||: : 1133it [41:03,  1.65s/it]
+2022-03-15 17:36:17,914 - INFO - tqdm - perplexity: 1118.1453, batch_loss: 6.5433, loss: 7.0194 ||: : 1139it [41:15,  1.87s/it]
+2022-03-15 17:36:28,913 - INFO - tqdm - perplexity: 1115.9386, batch_loss: 6.5890, loss: 7.0175 ||: : 1144it [41:26,  2.09s/it]
+2022-03-15 17:36:40,376 - INFO - tqdm - perplexity: 1113.8425, batch_loss: 6.6786, loss: 7.0156 ||: : 1149it [41:37,  2.28s/it]
+2022-03-15 17:36:51,412 - INFO - tqdm - perplexity: 1109.9915, batch_loss: 6.5275, loss: 7.0121 ||: : 1155it [41:48,  2.15s/it]
+2022-03-15 17:37:01,809 - INFO - tqdm - perplexity: 1107.1782, batch_loss: 6.2365, loss: 7.0096 ||: : 1160it [41:59,  2.10s/it]
+2022-03-15 17:37:11,969 - INFO - tqdm - perplexity: 1106.3285, batch_loss: 6.7305, loss: 7.0088 ||: : 1163it [42:09,  3.12s/it]
+2022-03-15 17:37:23,518 - INFO - tqdm - perplexity: 1103.6463, batch_loss: 6.3436, loss: 7.0064 ||: : 1168it [42:20,  2.47s/it]
+2022-03-15 17:37:34,312 - INFO - tqdm - perplexity: 1100.5750, batch_loss: 6.1712, loss: 7.0036 ||: : 1173it [42:31,  2.21s/it]
+2022-03-15 17:37:44,460 - INFO - tqdm - perplexity: 1098.2958, batch_loss: 6.1751, loss: 7.0015 ||: : 1178it [42:41,  2.09s/it]
+2022-03-15 17:37:57,058 - INFO - tqdm - perplexity: 1096.1963, batch_loss: 6.5454, loss: 6.9996 ||: : 1183it [42:54,  2.84s/it]
+2022-03-15 17:38:07,891 - INFO - tqdm - perplexity: 1093.8623, batch_loss: 6.5448, loss: 6.9975 ||: : 1188it [43:05,  2.19s/it]
+2022-03-15 17:38:18,527 - INFO - tqdm - perplexity: 1091.7505, batch_loss: 6.6648, loss: 6.9955 ||: : 1193it [43:15,  2.18s/it]
+2022-03-15 17:38:31,010 - INFO - tqdm - perplexity: 1089.5071, batch_loss: 6.6900, loss: 6.9935 ||: : 1197it [43:28,  3.10s/it]
+2022-03-15 17:38:37,628 - INFO - tqdm - loading instances: 19643it [43:35,  6.63it/s]
+2022-03-15 17:38:41,667 - INFO - tqdm - perplexity: 1085.9531, batch_loss: 6.4282, loss: 6.9902 ||: : 1203it [43:39,  1.74s/it]
+2022-03-15 17:38:52,917 - INFO - tqdm - perplexity: 1083.8812, batch_loss: 6.5877, loss: 6.9883 ||: : 1208it [43:50,  2.40s/it]
+2022-03-15 17:39:03,737 - INFO - tqdm - perplexity: 1081.7307, batch_loss: 6.5799, loss: 6.9863 ||: : 1213it [44:01,  2.23s/it]
+2022-03-15 17:39:14,338 - INFO - tqdm - perplexity: 1079.3034, batch_loss: 6.2547, loss: 6.9841 ||: : 1218it [44:11,  2.03s/it]
+2022-03-15 17:39:24,484 - INFO - tqdm - perplexity: 1078.0142, batch_loss: 6.5413, loss: 6.9829 ||: : 1222it [44:21,  2.26s/it]
+2022-03-15 17:39:36,388 - INFO - tqdm - perplexity: 1076.1875, batch_loss: 6.5118, loss: 6.9812 ||: : 1227it [44:33,  2.62s/it]
+2022-03-15 17:39:47,241 - INFO - tqdm - perplexity: 1073.6289, batch_loss: 6.5718, loss: 6.9788 ||: : 1232it [44:44,  2.13s/it]
+2022-03-15 17:39:58,595 - INFO - tqdm - perplexity: 1071.0448, batch_loss: 6.4266, loss: 6.9764 ||: : 1238it [44:55,  1.90s/it]
+2022-03-15 17:40:11,264 - INFO - tqdm - perplexity: 1068.4160, batch_loss: 6.8307, loss: 6.9739 ||: : 1244it [45:08,  2.27s/it]
+2022-03-15 17:40:22,255 - INFO - tqdm - perplexity: 1066.1317, batch_loss: 6.2492, loss: 6.9718 ||: : 1250it [45:19,  1.85s/it]
+2022-03-15 17:40:34,053 - INFO - tqdm - perplexity: 1063.8215, batch_loss: 6.7028, loss: 6.9696 ||: : 1256it [45:31,  1.94s/it]
+2022-03-15 17:40:44,856 - INFO - tqdm - perplexity: 1061.4987, batch_loss: 6.6120, loss: 6.9674 ||: : 1261it [45:42,  2.33s/it]
+2022-03-15 17:40:56,764 - INFO - tqdm - perplexity: 1058.3042, batch_loss: 6.5621, loss: 6.9644 ||: : 1268it [45:54,  1.99s/it]
+2022-03-15 17:41:07,828 - INFO - tqdm - perplexity: 1055.2289, batch_loss: 6.4730, loss: 6.9615 ||: : 1274it [46:05,  1.96s/it]
+2022-03-15 17:41:18,668 - INFO - tqdm - perplexity: 1053.4220, batch_loss: 6.2166, loss: 6.9598 ||: : 1278it [46:16,  2.59s/it]
+2022-03-15 17:41:30,103 - INFO - tqdm - perplexity: 1051.3865, batch_loss: 6.5839, loss: 6.9579 ||: : 1283it [46:27,  2.46s/it]
+2022-03-15 17:41:41,336 - INFO - tqdm - perplexity: 1047.6033, batch_loss: 6.4399, loss: 6.9543 ||: : 1290it [46:38,  1.57s/it]
+2022-03-15 17:41:52,998 - INFO - tqdm - perplexity: 1045.6081, batch_loss: 6.6581, loss: 6.9524 ||: : 1295it [46:50,  2.40s/it]
+2022-03-15 17:42:04,012 - INFO - tqdm - perplexity: 1043.1467, batch_loss: 6.3793, loss: 6.9500 ||: : 1299it [47:01,  2.59s/it]
+2022-03-15 17:42:05,877 - INFO - tqdm - loading instances: 21459it [47:03,  6.99it/s]
+2022-03-15 17:42:16,117 - INFO - tqdm - perplexity: 1040.7661, batch_loss: 6.5425, loss: 6.9477 ||: : 1305it [47:13,  2.08s/it]
+2022-03-15 17:42:27,822 - INFO - tqdm - perplexity: 1038.7720, batch_loss: 6.5079, loss: 6.9458 ||: : 1310it [47:25,  2.30s/it]
+2022-03-15 17:42:39,314 - INFO - tqdm - perplexity: 1036.4404, batch_loss: 6.3062, loss: 6.9435 ||: : 1316it [47:36,  1.92s/it]
+2022-03-15 17:42:51,946 - INFO - tqdm - perplexity: 1034.5374, batch_loss: 6.6858, loss: 6.9417 ||: : 1321it [47:49,  2.48s/it]
+2022-03-15 17:43:04,119 - INFO - tqdm - perplexity: 1031.8882, batch_loss: 6.2473, loss: 6.9391 ||: : 1327it [48:01,  2.12s/it]
+2022-03-15 17:43:14,778 - INFO - tqdm - perplexity: 1029.6773, batch_loss: 5.3179, loss: 6.9370 ||: : 1331it [48:12,  2.36s/it]
+2022-03-15 17:43:26,634 - INFO - tqdm - perplexity: 1028.2063, batch_loss: 6.7604, loss: 6.9356 ||: : 1334it [48:24,  4.05s/it]
+2022-03-15 17:43:38,469 - INFO - tqdm - perplexity: 1026.3424, batch_loss: 6.3604, loss: 6.9338 ||: : 1338it [48:35,  3.15s/it]
+2022-03-15 17:43:49,768 - INFO - tqdm - perplexity: 1024.9218, batch_loss: 6.3821, loss: 6.9324 ||: : 1342it [48:47,  2.81s/it]
+2022-03-15 17:44:01,745 - INFO - tqdm - perplexity: 1023.1762, batch_loss: 6.6904, loss: 6.9307 ||: : 1347it [48:59,  2.57s/it]
+2022-03-15 17:44:11,942 - INFO - tqdm - perplexity: 1021.8822, batch_loss: 6.5949, loss: 6.9294 ||: : 1351it [49:09,  2.63s/it]
+2022-03-15 17:44:22,109 - INFO - tqdm - perplexity: 1019.3397, batch_loss: 6.4556, loss: 6.9269 ||: : 1356it [49:19,  2.16s/it]
+2022-03-15 17:44:32,709 - INFO - tqdm - perplexity: 1017.7761, batch_loss: 6.2771, loss: 6.9254 ||: : 1360it [49:30,  2.42s/it]
+2022-03-15 17:44:43,016 - INFO - tqdm - perplexity: 1016.1594, batch_loss: 6.5009, loss: 6.9238 ||: : 1364it [49:40,  2.42s/it]
+2022-03-15 17:44:54,409 - INFO - tqdm - perplexity: 1013.3758, batch_loss: 6.6022, loss: 6.9210 ||: : 1369it [49:51,  2.77s/it]
+2022-03-15 17:45:05,397 - INFO - tqdm - perplexity: 1010.7000, batch_loss: 6.4457, loss: 6.9184 ||: : 1374it [50:02,  2.62s/it]
+2022-03-15 17:45:15,656 - INFO - tqdm - perplexity: 1009.8784, batch_loss: 6.6218, loss: 6.9176 ||: : 1377it [50:13,  3.16s/it]
+2022-03-15 17:45:26,041 - INFO - tqdm - perplexity: 1008.3793, batch_loss: 6.4730, loss: 6.9161 ||: : 1381it [50:23,  2.99s/it]
+2022-03-15 17:45:37,606 - INFO - tqdm - perplexity: 1005.8990, batch_loss: 6.3871, loss: 6.9136 ||: : 1387it [50:34,  2.11s/it]
+2022-03-15 17:45:48,468 - INFO - tqdm - perplexity: 1003.7416, batch_loss: 6.6114, loss: 6.9115 ||: : 1392it [50:45,  2.56s/it]
+2022-03-15 17:45:58,484 - INFO - tqdm - perplexity: 1002.6142, batch_loss: 6.6547, loss: 6.9104 ||: : 1396it [50:55,  2.54s/it]
+2022-03-15 17:46:09,006 - INFO - tqdm - perplexity: 1001.0602, batch_loss: 6.2296, loss: 6.9088 ||: : 1400it [51:06,  2.57s/it]
+2022-03-15 17:46:09,009 - INFO - tqdm - loading instances: 22400it [51:06,  5.27it/s]
+2022-03-15 17:46:21,108 - INFO - tqdm - perplexity: 999.4940, batch_loss: 6.7000, loss: 6.9072 ||: : 1405it [51:18,  2.48s/it]
+2022-03-15 17:46:35,407 - INFO - tqdm - perplexity: 998.6681, batch_loss: 6.7472, loss: 6.9064 ||: : 1409it [51:32,  3.67s/it]
+2022-03-15 17:46:46,182 - INFO - tqdm - perplexity: 997.6688, batch_loss: 6.2716, loss: 6.9054 ||: : 1412it [51:43,  3.44s/it]
+2022-03-15 17:46:57,855 - INFO - tqdm - perplexity: 996.2116, batch_loss: 6.6601, loss: 6.9040 ||: : 1417it [51:55,  2.59s/it]
+2022-03-15 17:47:09,967 - INFO - tqdm - perplexity: 994.4955, batch_loss: 6.4727, loss: 6.9022 ||: : 1422it [52:07,  2.67s/it]
+2022-03-15 17:47:21,742 - INFO - tqdm - perplexity: 993.7608, batch_loss: 6.5358, loss: 6.9015 ||: : 1426it [52:19,  2.84s/it]
+2022-03-15 17:47:32,079 - INFO - tqdm - perplexity: 991.8487, batch_loss: 6.6214, loss: 6.8996 ||: : 1431it [52:29,  2.23s/it]
+2022-03-15 17:47:42,820 - INFO - tqdm - perplexity: 989.7786, batch_loss: 6.2947, loss: 6.8975 ||: : 1436it [52:40,  2.13s/it]
+2022-03-15 17:47:55,393 - INFO - tqdm - perplexity: 988.0769, batch_loss: 6.2652, loss: 6.8958 ||: : 1441it [52:52,  2.49s/it]
+2022-03-15 17:48:09,793 - INFO - tqdm - perplexity: 986.0386, batch_loss: 6.4103, loss: 6.8937 ||: : 1447it [53:07,  2.88s/it]
