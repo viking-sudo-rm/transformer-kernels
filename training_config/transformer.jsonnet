@@ -13,7 +13,7 @@ local N_EPOCHS = 3;
 
 local D_MODEL = 432;
 local D_FF = 512;
-local N_LAYERS = 6;
+local N_LAYERS = 12;
 
 local BASE_READER = {
         "type": "simple_language_modeling",
@@ -25,7 +25,8 @@ local BASE_READER = {
             "type": "single_id"
           },
         },
-        "max_sequence_length": 200,
+        // For model development, I made this value artificially short.
+        "max_sequence_length": 64,
         "start_tokens": ["<S>"],
         "end_tokens": ["</S>"],
 };
@@ -90,22 +91,23 @@ local BASE_LOADER = {
   // },
   "trainer": {
     "num_epochs": N_EPOCHS,
-    "optimizer": {
-      // The gradient accumulators in Adam for the running stdev and mean for
-      // words not used in the sampled softmax would be decayed to zero with the
-      // standard "adam" optimizer.
-      "type": "dense_sparse_adam"
-    },
+    "optimizer": "adamw",
+    // "optimizer": {
+    //   // The gradient accumulators in Adam for the running stdev and mean for
+    //   // words not used in the sampled softmax would be decayed to zero with the
+    //   // standard "adam" optimizer.
+    //   "type": "dense_sparse_adam"
+    // },
     // TODO(brendanr): Needed with transformer too?
     // "grad_norm": 10.0,
-    "learning_rate_scheduler": {
-      "type": "noam",
-      // See https://github.com/allenai/calypso/blob/master/calypso/train.py#L401
-      "model_size": 512,
-      // See https://github.com/allenai/calypso/blob/master/bin/train_transformer_lm1b.py#L51.
-      // Adjusted based on our sample size relative to Calypso's.
-      "warmup_steps": 6000
-    },
+    // "learning_rate_scheduler": {
+    //   "type": "noam",
+    //   // See https://github.com/allenai/calypso/blob/master/calypso/train.py#L401
+    //   "model_size": 512,
+    //   // See https://github.com/allenai/calypso/blob/master/bin/train_transformer_lm1b.py#L51.
+    //   // Adjusted based on our sample size relative to Calypso's.
+    //   "warmup_steps": 6000
+    // },
     // "use_amp": true,
     "device": CUDA
   }

@@ -3,4 +3,6 @@ __pycache__/
 *.pyc
 .DS_Store
 *.th
+*.log
 
+models/

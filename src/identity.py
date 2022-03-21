@@ -1,5 +1,3 @@
-from typing import Optional
-from numpy import identity
 import torch
 
 from allennlp.modules import Seq2SeqEncoder
@@ -42,7 +40,6 @@ class IdentityTransformer(BidirectionalLanguageModelTransformer):
 
 
 if __name__ == "__main__":
-    # transformer = IdentityPytorchTransformer(80, 80, 80)
     transformer = IdentityTransformer(80, 80, 8)
     for mod in transformer.modules():
         if isinstance(mod, MultiHeadedAttention):
